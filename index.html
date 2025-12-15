@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+  // Force app to treat root as Home even when hosted under /ad.github.io/
+  if (location.pathname.endsWith('/ad.github.io/') && !location.hash) {
+    location.replace(location.origin + location.pathname + '#/Home');
+  }
+</script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
